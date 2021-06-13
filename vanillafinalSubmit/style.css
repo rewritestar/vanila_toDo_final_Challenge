@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'LAB디지털';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KoreanFrenchTypewriter';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/KoreanFrenchTypewriter.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#bgImg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.js-name,
+.js-clock,
+.js-weather{
+  z-index: 1;
+  position: static;
+}
+
+.js-backgroundImage{
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  background-size: cover;
+}
+
+.js-clock{
+  color: 	#FFFF96;
+  opacity: 0.9;
+  font-family: "LAB디지털";
+}
+.js-name,
+.js-weather,
+.js-toDoList{
+  font-family: "KoreanFrenchTypewriter";
+  color:white;
+  opacity: 0.9;
+}
+
+/* .js-toDoList{
+  position: relative;
+  top: 30px;
+} */
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+}
